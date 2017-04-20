@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jquery utily Demo page</title>
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
+<script src="../dist/jquery.emduo.utily.js"></script>
+</head>
+ 
+<body>
+<div><input name="phone" id="phone"><button class="testphone">测试手机号码</button></div>
+</body>
+ <script>
+
+$('.testphone').click(function(){
+var info = $('#phone').val();
+alert($.isPhone(info));
+
+})
+
+
+ </script>
+
+</html>

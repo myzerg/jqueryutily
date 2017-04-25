@@ -13,3 +13,8 @@ $.isPhone = function(s)
 	var tel_preg = /^(13[0-9]|14[0-9]|15[0-9]|17[0-9]|18[0-9])\d{8}$/i;
 	return tel_preg.test(s);
 }
+$.isHanzi = function(s)
+{
+	return  (/.*[\u4e00-\u9fa5]+.*$/.test(s));
+}
+

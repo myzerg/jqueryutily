@@ -18,3 +18,14 @@ $.isHanzi = function(s)
 	return  (/.*[\u4e00-\u9fa5]+.*$/.test(s));
 }
 
+$.getSync=function(url){
+        var result=null;
+        $.ajax({
+          url:url,
+          async:false,
+          success:function(data){
+            result=data;
+          }
+        });
+        return result;
+}
